@@ -17,7 +17,7 @@
 
 /* Create a new table called persons 
    with columns: id, person_name, birth_date, and phone */
-CREATE TABLE persons (
+CREATE TABLE person (
     id INT NOT NULL,
     person_name VARCHAR(50) NOT NULL,
     birth_date DATE,
@@ -30,11 +30,11 @@ CREATE TABLE persons (
 =============================================================================== */
 
 -- Add a new column called email to the persons table
-ALTER TABLE persons
+ALTER TABLE person
 ADD email VARCHAR(50) NOT NULL
 
 -- Remove the column phone from the persons table
-ALTER TABLE persons
+ALTER TABLE person
 DROP COLUMN phone
 
 /* ============================================================================== 
@@ -42,4 +42,4 @@ DROP COLUMN phone
 =============================================================================== */
 
 -- Delete the table persons from the database
-DROP TABLE persons
+DROP TABLE person
